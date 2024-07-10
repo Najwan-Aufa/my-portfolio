@@ -1,0 +1,402 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+.navbar {
+  position: sticky;
+  top: 0;
+  background-color: #191e24;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+  padding: 20px 50px;
+}
+
+.navbar .logo {
+  font-size: 20px;
+  font-weight: 600;
+  color: white;
+}
+
+.navbar .navbar-nav {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.navbar .navbar-nav .nav-link {
+  color: white;
+  transition: 0.3s;
+}
+
+.navbar .navbar-nav .nav-link:hover {
+  color: rgb(255, 0, 0);
+}
+
+.teks1 {
+  flex: 1;
+  display: flex;
+  margin-right: 40%;
+  margin-top: -10%;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-size: 3em;
+  font-family: Arial, sans-serif;
+}
+
+.text-color {
+  color: aqua;
+}
+
+.keterangan {
+  margin-top: -45vh;
+  margin-left: 280px;
+  font-size: 1.2em;
+  color: #666;
+}
+
+.photo {
+  margin-top: -15%;
+  flex: 1;
+  margin-left: 60%;
+  width: 40%;
+  height: 25%;
+}
+
+.gambar {
+  width: 50%;
+  height: auto;
+}
+
+.about-hide {
+  color: white;
+  text-align: center;
+  margin-top: 20%;
+}
+
+.about {
+    color: aqua;
+    margin-top: 5%;
+    text-align: center;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    font-family: Arial, sans-serif;
+    text-transform: capitalize;
+}
+
+.about-nama {
+    margin-left: 40%;
+    margin-top: 15%;
+}
+
+.about-ket {
+    max-width: 40%;
+    margin-left: 40%;
+}
+
+.card-about {
+    background-color: blueviolet;
+    width: 5%;
+    padding: 12% 10%;
+    border-radius: 3%;
+    margin-top: -18%;
+    margin-left: 15%;
+}
+
+.about-gambar {
+    position: absolute;
+    width: 20%;
+    height: auto;
+    margin-top: -22%;
+    margin-left: 15%;
+    border-radius: 3%;
+}
+
+.btn {
+  width: 6.5em;
+  height: 2.3em;
+  margin: 0.5em;
+  margin-left: 280px;
+  margin-top: 50px;
+  background: black;
+  color: white;
+  border: none;
+  border-radius: 0.625em;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.btn:hover {
+  color: black;
+}
+
+.btn:after {
+  content: "";
+  background: aqua;
+  position: absolute;
+  z-index: -1;
+  left: -20%;
+  right: -20%;
+  top: 0;
+  bottom: 0;
+  transform: skewX(-45deg) scale(0, 1);
+  transition: all 0.5s;
+}
+
+button:hover:after {
+  transform: skewX(-45deg) scale(1, 1);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.teks2 {
+  color: white;
+  text-align: center;
+  margin-top: 10%;
+}
+
+.teks3 {
+  color: aqua;
+    margin-top: 1%;
+    text-align: center;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    font-family: Arial, sans-serif;
+    text-transform: capitalize;
+}
+
+.card1 {
+  background-color: blueviolet;
+  width: 8%;
+  padding: 7% 10%;
+  border-radius: 3%;
+  margin-left: 10%;
+  margin-top: 7%;
+  text-align: center;
+}
+
+.card2 {
+  background-color: blueviolet;
+  width: 8%;
+  padding: 7% 10%;
+  border-radius: 3%;
+  margin-left: 40%;
+  margin-top: -257.5PX;
+  text-align: center;
+}
+
+.card3 {
+  background-color: blueviolet;
+  width: 8%;
+  padding: 7% 10%;
+  border-radius: 3%;
+  margin-left: 70%;
+  margin-top: -257.5PX;
+  text-align: center;
+}
+
+.card4 {
+  background-color: blueviolet;
+  width: 8%;
+  padding: 7% 10%;
+  border-radius: 3%;
+  margin-left: 10%;
+  margin-top: 5%;
+  text-align: center;
+}
+.card5 {
+  background-color: blueviolet;
+  width: 8%;
+  padding: 7% 10%;
+  border-radius: 3%;
+  margin-left: 40%;
+  margin-top: -257.5PX;
+  text-align: center;
+}
+.card6 {
+  background-color: blueviolet;
+  width: 8%;
+  padding: 7% 10%;
+  border-radius: 3%;
+  margin-left: 70%;
+  margin-top: -257.5PX;
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}
+
+.btn2 {
+  margin-top: 10%;
+  margin-bottom: 4%;
+  margin-left: 47%;
+  padding: 12.5px 30px;
+  border: 0;
+  border-radius: 100px;
+  background-color: #2ba8fb;
+  color: #ffffff;
+  font-weight: Bold;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+}
+
+.btn2:hover {
+  background-color: #6fc5ff;
+  box-shadow: 0 0 20px #6fc5ff50;
+  transform: scale(1.1);
+}
+
+.btn2:active {
+  background-color: #3d94cf;
+  transition: all 0.25s;
+  -webkit-transition: all 0.25s;
+  box-shadow: none;
+  transform: scale(0.98);
+}
+@media screen and (max-width: 768px) {
+  .toggle-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    cursor: pointer;
+    margin-right: -10px;
+  }
+
+  .toggle-menu span {
+    display: block;
+    background-color: white;
+    height: 2px;
+    width: 35px;
+  }
+
+  .navbar {
+    position: relative;
+    padding: 20px;
+  }
+
+  .navbar .navbar-nav {
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -300px;
+    right: 0;
+    background-color: #191e24;
+    padding: 35px 0;
+  }
+
+  .navbar .navbar-nav.show {
+    top: 60px;
+  }
+  
+  .teks1 {
+    margin-right: 15%;
+    margin-top: -55%;
+    font-size: 2em;
+  }
+
+  .teks2 {
+    display: none;
+  }
+
+  .keterangan {
+    margin-left: 25px;
+  }
+
+  .gambar {
+    flex: 1;
+    width: 100%;
+    height: auto;
+    margin-top: 85%;
+    margin-left: -70%;
+  }
+  .btn {
+    margin-left: 5%;
+  }
+
+  .card-about {
+    margin-top: 10%;
+    margin-left: 25%;
+    width: 10%;
+    padding: 30% 25%;
+  }
+
+  .about-nama {
+    position: absolute;
+    margin-top: 90%;
+    margin-left: 27%
+  }
+
+  .about-ket {
+    position: absolute;
+    margin-top: 100%;
+    margin-left: 10%;
+    width: 80%;
+    max-width: 100%;
+  }
+
+  .about-gambar {
+    width: 50%;
+    height: auto;
+    margin-top: -50%;
+    margin-left: 25%;
+  }
+
+  .teks3 {
+    margin-top: 120%;
+  }
+
+  .card1 {
+    width: 50%;
+    padding: 20% 40%;
+  }
+  .card2 {
+    width: 50%;
+    padding: 20% 40%;
+    margin-top: 20%;
+    margin-left: 10%;
+  }
+  .card3 {
+    width: 50%;
+    padding: 20% 40%;
+    margin-top: 20%;
+    margin-left: 10%;
+  }
+  .card4 {
+    width: 50%;
+    padding: 20% 40%;
+    margin-top: 20%;
+  }
+  .card5 {
+    width: 50%;
+    padding: 20% 40%;
+    margin-top: 20%;
+    margin-left: 10%;
+  }
+  .card6 {
+    width: 50%;
+    padding: 20% 40%;
+    margin-top: 20%;
+    margin-left: 10%;
+  }
+
+  .btn2 {
+    margin-left: 35%;
+  }
+}
