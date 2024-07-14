@@ -1,8 +1,4 @@
 
-## 🚀 About Me
-I'm a Web Developer...
-
-
 # simple portfolio design
 
 ini adalah web portfolio saya, yang saya buat menggunakan html css dan js
