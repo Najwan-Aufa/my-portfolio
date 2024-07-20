@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Navbar</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <script
+      src="https://kit.fontawesome.com/e96d01d6d3.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <nav class="navbar">
+      <a href="#" class="logo"
+        >Najwan <span class="text-color5">&nbsp;Aufa</span></a
+      >
+      <div class="toggle-menu" id="toggle-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <ul class="navbar-nav" id="navbar-nav">
+        <li><a href="#home" class="nav-link">Home</a></li>
+        <li><a href="#about-me" class="nav-link">About Me</a></li>
+        <li><a href="#project" class="nav-link">Project</a></li>
+        <li><a href="#skill" class="nav-link">Skill</a></li>
+        <li><a href="#Contact" class="nav-link">Contact</a></li>
+      </ul>
+    </nav>
+    <header class="full-screen-header" id="home">
+      <div>
+        <div class="teks" id="home">
+          <h1 class="teks1">
+            Hai, Saya <span class="text-color">Najwan</span>
+          </h1>
+          <p class="keterangan">
+            Saya adalah seorang Arsitek dan Web developer
+          </p>
+        </div>
+      </div>
+      <div class="button">
+        <button onclick="scrollToId('Contact')" class="btn">Contact</button>
+      </div>
+      <div class="photo">
+        <img src="gambar/avatar-removebg.png" alt="Foto Anda" class="gambar" />
+      </div>
+    </header>
+    <header class="full-screen-header2" id="about-me">
+      <div class="about-me" id="about-me">
+        <h1 class="about reveal">about</h1>
+        <h1 class="about-nama reveal">Saya Najwan</h1>
+        <br />
+        <p class="about-ket reveal">
+          Saya adalah seorang arsitek dan programmer yang berdedikasi dalam
+          menciptakan desain yang fungsional dan inovatif. Dengan latar belakang
+          dalam arsitektur, saya memiliki kemampuan untuk merancang ruang yang
+          estetis dan efisien. Selain itu, sebagai programmer, saya
+          mengembangkan solusi perangkat lunak untuk mendukung dan meningkatkan
+          proses desain arsitektur. Menggabungkan dua keahlian ini, saya mampu
+          menyatukan kreativitas dan teknologi untuk menghasilkan karya yang
+          unggul dan relevan dengan kebutuhan zaman
+        </p>
+        <p class="card-about reveal"></p>
+      </div>
+      <div class="gambar-about">
+        <img src="gambar/avatar-removebg.png" alt="" class="about-gambar reveal" />
+      </div>
+    </header>
+    <header class="full-screen-header3" id="project">
+      <h1 class="pro-fix">project</h1>
+      <h1 class="judul-pro reveal">project</h1>
+      <div class="projects reveal">
+        <div class="card">
+          <img src="gambar/project.jpeg" alt="Interactive E-Learning System" />
+          <div class="card-content">
+            <h3>Minimalist Kitchen Design</h3>
+          </div>
+        </div>
+        <div class="card">
+          <img src="gambar/project2.png" alt="Online food ordering" />
+          <div class="card-content">
+            <h3>Modern House</h3>
+          </div>
+        </div>
+        <div class="card">
+          <img
+            src="gambar/project3.png"
+            alt="Childhood Immunization Record system"
+          />
+          <div class="card-content">
+            <h3>Modern House</h3>
+          </div>
+        </div>
+        <div class="card hidden">
+          <img src="gambar/project4.png" alt="The Footwear Academy" />
+          <div class="card-content">
+            <h3>Modern House</h3>
+          </div>
+        </div>
+        <div class="card hidden">
+          <img
+            src="gambar/project5.png"
+            alt="Bitcoin Investment trading website"
+          />
+          <div class="card-content">
+            <h3>Modern House</h3>
+          </div>
+        </div>
+        <div class="card hidden">
+          <img src="gambar/project6.png" alt="Online Banking system" />
+          <div class="card-content">
+            <h3>OModern House</h3>
+          </div>
+        </div>
+      </div>
+      <button class="load-more reveal" onclick="loadMore()">Load More</button>
+    </header>
+    <header class="full-screen-header4" id="skill">
+      <h1>skill</h1>
+    </header>
+    <header class="full-screen-header5" id="Contact">
+      <div class="copy">
+        <h1 class="Contact-info1"></h1>
+        <p class="icon icon-ig">
+          <i class="fa-brands fa-instagram"></i> Instagram
+        </p>
+        <p class="icon icon-wa">
+          <i class="fa-brands fa-whatsapp"></i> WhatsApp
+        </p>
+        <p class="icon icon-yt"><i class="fa-brands fa-youtube"></i> YouTube</p>
+      </div>
+    </header>
+    <script src="main.js"></script>
+  </body>
+</html>
