@@ -1,0 +1,678 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+html::-webkit-scrollbar { 
+  display: none; /* Untuk Chrome, Safari, dan Opera */
+}
+
+a {
+  text-decoration: none;
+}
+
+.full-screen-header {
+  width: 100%;
+  height: 150vh;
+  background-color: #37b7c3;
+  color: white;
+}
+
+.full-screen-header2 {
+  width: 100%;
+  height: 120vh;
+  background-color: #323232;
+  color: white;
+}
+
+.full-screen-header3 {
+  width: 100%;
+  height: 120vh;
+  background-color: #37b7c3;
+  color: white;
+}
+
+.full-screen-header4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-color: #323232;
+  color: white;
+}
+
+.full-screen-header5 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-color: #37b7c3;
+  color: white;
+  text-align: center;
+}
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.card {
+  width: 25%;
+  height: 300px; 
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  margin-left: 5%;
+  margin-top: 10%;
+}
+.card img {
+  width: 100%;
+}
+.card-content {
+  padding: 16px;
+  text-align: center;
+}
+.hidden {
+  display: none;
+}
+.load-more {
+  margin: 20px auto;
+  display: block;
+  padding: 10px 20px;
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.test1 {
+  margin-top: 500%;
+}
+
+.text-color5 {
+  color: #37B7C3;
+}
+
+.navbar {
+  position: sticky;
+  top: 0;
+  background-color: #191e24;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+  font-family: "Roboto", sans-serif;
+  padding: 20px 50px;
+  z-index: 999;
+}
+
+.navbar .logo {
+  font-size: 20px;
+  font-weight: 600;
+  color: white;
+}
+
+.navbar .navbar-nav {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.navbar .navbar-nav .nav-link {
+  color: white;
+  transition: 0.3s;
+}
+
+.navbar .navbar-nav .nav-link:hover {
+  color: rgb(255, 0, 0);
+}
+
+.teks1 {
+  flex: 1;
+  display: flex;
+  margin-right: 40%;
+  margin-top: -10%;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-size: 3em;
+  font-family: Arial, sans-serif;
+}
+
+.text-color {
+  color: aqua;
+}
+
+.keterangan {
+  margin-top: -45vh;
+  margin-left: 280px;
+  font-size: 1.2em;
+  color: #666;
+}
+
+.photo {
+  margin-top: -15%;
+  flex: 1;
+  margin-left: 60%;
+  width: 40%;
+  height: 25%;
+}
+
+.gambar {
+  width: 50%;
+  height: auto;
+}
+
+.about-hide {
+  color: #323232;
+  text-align: center;
+  margin-top: 0%;
+}
+
+.about {
+  color: aqua;
+  margin-top: 5%;
+  text-align: center;
+  text-decoration: underline;
+  text-underline-offset: 10px;
+  font-family: Arial, sans-serif;
+  text-transform: capitalize;
+}
+
+.about-nama {
+  margin-left: 40%;
+  margin-top: 15%;
+}
+
+.about-ket {
+  max-width: 40%;
+  margin-left: 40%;
+}
+
+.card-about {
+  background-color: blueviolet;
+  width: 5%;
+  padding: 12% 10%;
+  border-radius: 3%;
+  margin-top: -18%;
+  margin-left: 15%;
+}
+
+.about-gambar {
+  position: absolute;
+  width: 20%;
+  height: auto;
+  margin-top: -22%;
+  margin-left: 15%;
+  border-radius: 3%;
+}
+
+.btn {
+  width: 6.5em;
+  height: 2.3em;
+  margin: 0.5em;
+  margin-left: 280px;
+  margin-top: 50px;
+  background: black;
+  color: white;
+  border: none;
+  border-radius: 0.625em;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.btn:hover {
+  color: black;
+}
+
+.btn:after {
+  content: "";
+  background: aqua;
+  position: absolute;
+  z-index: -1;
+  left: -20%;
+  right: -20%;
+  top: 0;
+  bottom: 0;
+  transform: skewX(-45deg) scale(0, 1);
+  transition: all 0.5s;
+}
+
+button:hover:after {
+  transform: skewX(-45deg) scale(1, 1);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.teks2 {
+  color: #37b7c3;
+  text-align: center;
+  margin-top: 0%;
+}
+
+.teks3 {
+  color: #323232;
+  margin-top: 5%;
+  text-align: center;
+  text-decoration: underline;
+  text-underline-offset: 10px;
+  font-family: Arial, sans-serif;
+  text-transform: capitalize;
+}
+
+.hidden {
+  display: none;
+}
+
+.gambar-project {
+  position: absolute;
+  width: 20.1%;
+  height: auto;
+  border-radius: 3%;
+  margin-top: -5%;
+  margin-left: -10%;
+}
+
+.gambar-project2 {
+  position: absolute;
+  width: 20.1%;
+  height: auto;
+  border-radius: 3%;
+  margin-top: -7%;
+  margin-left: -10%;
+}
+.btn2 {
+  position: absolute;
+  margin-top: -15%;
+  margin-bottom: 1%;
+  margin-left: 47%;
+  padding: 12.5px 30px;
+  border: 0;
+  border-radius: 100px;
+  background-color: #2ba8fb;
+  color: #ffffff;
+  font-weight: Bold;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+}
+
+.btn2:hover {
+  background-color: #6fc5ff;
+  box-shadow: 0 0 20px #6fc5ff50;
+  transform: scale(1.1);
+}
+
+.btn2:active {
+  background-color: #3d94cf;
+  transition: all 0.25s;
+  -webkit-transition: all 0.25s;
+  box-shadow: none;
+  transform: scale(0.98);
+}
+
+ul {
+  list-style: none;
+}
+
+.example-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.example-2 .icon-content {
+  margin: 0 10px;
+  position: relative;
+}
+.example-2 .icon-content .tooltip {
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #fff;
+  padding: 6px 10px;
+  border-radius: 5px;
+  opacity: 0;
+  visibility: hidden;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+.example-2 .icon-content:hover .tooltip {
+  opacity: 1;
+  visibility: visible;
+  top: -50px;
+}
+.example-2 .icon-content a {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  color: #4d4d4d;
+  background-color: #fff;
+  transition: all 0.3s ease-in-out;
+}
+.example-2 .icon-content a:hover {
+  box-shadow: 3px 2px 45px 0px rgb(0 0 0 / 12%);
+}
+.example-2 .icon-content a svg {
+  position: relative;
+  z-index: 1;
+  width: 30px;
+  height: 30px;
+}
+.example-2 .icon-content a:hover {
+  color: white;
+}
+.example-2 .icon-content a .filled {
+  position: absolute;
+  top: auto;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  background-color: #000;
+  transition: all 0.3s ease-in-out;
+}
+.example-2 .icon-content a:hover .filled {
+  height: 100%;
+}
+
+.example-2 .icon-content a[data-social="linkedin"] .filled,
+.example-2 .icon-content a[data-social="linkedin"] ~ .tooltip {
+  background-color: #0274b3;
+}
+
+.example-2 .icon-content a[data-social="github"] .filled,
+.example-2 .icon-content a[data-social="github"] ~ .tooltip {
+  background-color: #24262a;
+}
+.example-2 .icon-content a[data-social="instagram"] .filled,
+.example-2 .icon-content a[data-social="instagram"] ~ .tooltip {
+  background: linear-gradient(
+    45deg,
+    #405de6,
+    #5b51db,
+    #b33ab4,
+    #c135b4,
+    #e1306c,
+    #fd1f1f
+  );
+}
+.example-2 .icon-content a[data-social="youtube"] .filled,
+.example-2 .icon-content a[data-social="youtube"] ~ .tooltip {
+  background-color: #ff0000;
+}
+
+.teks5 {
+  position: absolute;
+  color: aqua;
+  margin-top: -30%;
+  text-align: center;
+  text-decoration: underline;
+  text-underline-offset: 10px;
+  font-family: Arial, sans-serif;
+  text-transform: capitalize;
+}
+
+.skilltitel {
+  position: absolute;
+  color: aqua;
+  margin-top: -30%;
+  text-align: center;
+  text-decoration: underline;
+  text-underline-offset: 10px;
+  font-family: Arial, sans-serif;
+  text-transform: capitalize;
+}
+
+.container {
+  position: relative;
+  max-width: 500px;
+  width: 100%;
+  background: #282828;
+  margin: 0 15px;
+  padding: 10px 20px;
+  border-radius: 7px;
+}
+
+.container .skill-box {
+  width: 100%;
+  margin: 25px 0;
+}
+
+.skill-box .title {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  color: rgb(226, 226, 226);
+}
+
+.skill-box .skill-bar {
+  height: 8px;
+  width: 100%;
+  border-radius: 6px;
+  margin-top: 6px;
+  background: rgba(236, 236, 236, 0.1);
+}
+
+.skill-bar .skill-per {
+  position: relative;
+  display: block;
+  height: 100%;
+  width: 90%;
+  border-radius: 6px;
+  background: rgb(226, 226, 226);
+  animation: progress 0.4s ease-in-out forwards;
+  opacity: 0;
+}
+
+.skill-per.html {
+  /*progreso de las diferentes lenguajes*/
+  width: 70%;
+  animation-delay: 0.1s;
+}
+
+.skill-per.scss {
+  /*progreso de las diferentes lenguajes*/
+  width: 80%;
+  animation-delay: 0.1s;
+}
+
+.skill-per.Boostrap {
+  /*progreso de las diferentes lenguajes*/
+  width: 50%;
+  animation-delay: 0.2s;
+}
+
+
+@keyframes progress {
+  0% {
+    width: 0;
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.skill-per .tooltip {
+  position: absolute;
+  right: -14px;
+  top: -28px;
+  font-size: 15px;
+  font-weight: 500;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  padding: 2px 6px;
+  border-radius: 3px;
+  background: rgb(226, 226, 226);
+  z-index: 1;
+}
+
+.tooltip::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -2px;
+  height: 10px;
+  width: 10px;
+  z-index: -1;
+  background-color: rgb(226, 226, 226);
+  transform: translateX(-50%) rotate(45deg);
+}
+
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(-100px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.animate-on-scroll.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+@media screen and (max-width: 768px) {
+  .toggle-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    cursor: pointer;
+    margin-right: -10px;
+  }
+
+  .toggle-menu span {
+    display: block;
+    background-color: white;
+    height: 2px;
+    width: 35px;
+  }
+
+  .navbar {
+    position: sticky;
+    padding: 20px;
+  }
+
+  .navbar .navbar-nav {
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -300px;
+    right: 0;
+    background-color: #191e24;
+    padding: 35px 0;
+  }
+
+  .navbar .navbar-nav.show {
+    top: 60px;
+  }
+
+  .teks1 {
+    margin-right: 15%;
+    margin-top: -55%;
+    font-size: 2em;
+  }
+
+  .keterangan {
+    margin-left: 29px;
+  }
+
+  .gambar {
+    flex: 1;
+    width: 100%;
+    height: auto;
+    margin-top: 85%;
+    margin-left: -70%;
+  }
+  .btn {
+    margin-left: 5%;
+  }
+
+  .card-about {
+    margin-top: 10%;
+    margin-left: 25%;
+    width: 10%;
+    padding: 30% 25%;
+  }
+
+  .about-nama {
+    position: absolute;
+    margin-top: 90%;
+    margin-left: 20%;
+  }
+
+  .teks3 {
+    margin-top: 10%;
+  }
+
+  .about-ket {
+    position: absolute;
+    margin-top: 100%;
+    margin-left: 10%;
+    width: 80%;
+    max-width: 100%;
+  }
+
+  .about-gambar {
+    width: 50%;
+    height: auto;
+    margin-top: -50%;
+    margin-left: 25%;
+  }
+
+  .projects {
+    margin-top: 5%;
+    margin-right: 5%;
+    flex-direction: column;
+    align-items: center;
+}
+.card {
+    width: 90%;
+}
+
+  .btn2 {
+    margin-left: 35%;
+  }
+
+  .gambar-project {
+    width: 80%;
+    height: auto;
+    margin-top: -20%;
+    margin-left: -40%;
+  }
+
+  .full-screen-header3 {
+    height: 180vh;
+  }
+
+  .teks5 {
+    margin-top: -150%;
+  }
+
+  .skilltitel {
+    position: absolute;
+    color: aqua;
+    margin-top: -170%;
+    text-align: center;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    font-family: Arial, sans-serif;
+    text-transform: capitalize;
+  }
+
+}
