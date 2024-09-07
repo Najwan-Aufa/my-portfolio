@@ -92,3 +92,10 @@ document.addEventListener('DOMContentLoaded', function() {
   window.addEventListener('scroll', checkVisibility);
   checkVisibility(); // Initial check
 });
+
+function scrollToId(id) {
+  var element = document.getElementById(id);
+  if (element) {
+    element.scrollIntoView({ behavior: "smooth" });
+  }
+}
